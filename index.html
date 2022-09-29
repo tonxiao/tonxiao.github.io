@@ -26,14 +26,12 @@
                 <div id="text">
               <div id="code">
             <font color="#FF0000">    
-<span class="say"><h1>我希望有个如你一般的人。</h1></span><br><br>
-<span class="say">我希望有个如你一般的人。</span><br> <br>    
-<span class="say">如这山间清晨一般明亮清爽，</span><br><br>
-<span class="say">如奔赴古城道路上阳光一般的人，</span><br><br>
-<span class="say">温暖而不炙热，覆盖我所有肌肤。</span><br><br>
-<span class="say">由起点到夜晚，由山野到书房，一切问题的答案都很简单。</span><br><br>
-<span class="say">我希望有个如你一般的人，贯彻未来，数遍生命的公路牌。</span><br><br>
-<span class="say"><span class="space"></span> -- ddd--</span><br>
+<span class="say">亲爱的欣悦宝宝：</span><br><br>
+<span class="say">&emsp;生日快乐呀。时间总是悄悄的流逝，怀着热烈又荣幸的心情，很开心能陪你渡过第一个生日，不能在你身边左右，也许这就是美中不足吧，哈哈哈。不过总是希望能给你带来一点不一样的东西，比起仪式感，更希望能表达出，在我的心里的你无与伦比的位置。下一个生日一定准备一个特别的生日蛋糕亲手奉上（点满我的糕点技能树，哈哈），当然也希望渴望吃到有人做的爱心早餐，毕竟看起来真的很馋人（哈哈哈哈哈），有机会可以给你做各种各样的好吃的，能解锁我们更多的场景。</span><br> <br>    
+<span class="say">&emsp;这个世界熙熙攘攘，而你悬在我的心上，将月光撒在了我的心上，在漆黑的夜晚，将生活的阴霾一扫而光，我知道那是我的幸运。感谢你的出现，给我带来了一些不一样的东西，生活总是要有你才会有更多的色彩。你总是不经意间出现在我的脑海里 ，每一天的想念构成了对你深沉的爱意，就像凌晨四点钟醒来，总觉得这时，你应该在我身边。希望我们能每一天都能保持热烈而虔诚， 就像每天的晚风与落日，落日沉溺于橙色的海，晚风沦陷于赤诚的爱。</span><br><br>
+<span class="say">&emsp;从我们相识到如今，不算长也不算短，爱上一个人也许只需要一个瞬间，从心念所至，到生万千欢喜；而懂一个人也许需要漫长岁月，从水滴石穿，到悲喜相通。回想打疫苗后的那一天，心里也会感到你的难受，想尽可能让我的小宝贝一直开心，我希望能用一生岁月里的温柔耐心去了解你，感知着你的快乐，共担着你的痛苦。如果可以，我想化作一阵风一直陪在着你的身旁。</span><br><br>
+<span class="say">&emsp;最后祝万事遂欣，平安喜悦。愿我爱的女孩以后的道路能光明坦荡，愿所有美好都与你如期而至。人生如棋，愿你落子从容。岁月如歌，愿你不负韶华</span><br><br>
+<span class="say"><span class="space"></span> -- 爱你的文--</span><br>
 <span class="say"><h1>生日快乐!</h1></span><br>
         </font>
       </div>
@@ -46,7 +44,7 @@
 <span class="STYLE1"></span>
                   <!-- <div id="clock"></div> -->
               </div>
-                <canvas id="canvas" width="1100" height="680"></canvas>
+                <canvas id="canvas" width="1500" height="580"></canvas>
             </div>
             
         </div>
@@ -93,10 +91,10 @@
             bloom: {
                 num: 700,
                 width: 1080,
-                height: 650,
+                height: 750,
             },
             footer: {
-                width: 1200,
+                width: 1400,
                 height: 5,
                 speed: 10,
             }
@@ -155,13 +153,13 @@
         }));
 
         var moveAnimate = eval(Jscex.compile("async", function () {
-            tree.snapshot("p1", 240, 0, 610, 680);
+            tree.snapshot("p1", 240, 0, 610, 780);
             while (tree.move("p1", 500, 0)) {
                 foot.draw();
                 $await(Jscex.Async.sleep(10));
             }
             foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+            tree.snapshot("p2", 600, 0, 610, 780);
 
             // 会有闪烁不得意这样做, (＞﹏＜)
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
@@ -182,11 +180,11 @@
 
         var textAnimate = eval(Jscex.compile("async", function () {
         var together = new Date();
-        together.setFullYear(2009,10,23 );      //时间年月日
-        together.setHours(16);            //小时  
-        together.setMinutes(53);          //分钟
+        together.setFullYear(2022,05,00 );      //时间年月日
+        together.setHours(0);            //小时  
+        together.setMinutes(0);          //分钟
         together.setSeconds(0);         //秒前一位
-        together.setMilliseconds(2);        //秒第二位
+        together.setMilliseconds(0);        //秒第二位
 
         $("#code").show().typewriter();
             $("#clock-box").fadeIn(500);
